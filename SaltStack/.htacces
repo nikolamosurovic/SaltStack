@@ -1,0 +1,9 @@
+<IfModule mod_authz_core.c>
+    Require all denied
+    Require ip 178.216.60.90
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+    Deny from all
+    Allow from 178.216.60.90
+</IfModule>
